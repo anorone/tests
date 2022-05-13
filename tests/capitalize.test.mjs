@@ -1,3 +1,4 @@
+import { strict as assert } from 'assert';
 import capitalize from '../src/capitalize.mjs';
 
 const data = [
@@ -13,9 +14,7 @@ const data = [
 
 data.forEach(({arg, expected}) => {
   const received = capitalize(arg);
-  if (received !== expected) {
-    throw new Error('Tests have not passed.')
-  }
+  assert.equal(received, expected);
 });
 
 console.log('Tests have passed.');
