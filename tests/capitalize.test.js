@@ -1,5 +1,5 @@
 import { strict as assert } from 'assert';
-import capitalize from '../src/capitalize.mjs';
+import capitalize from '../src/capitalize.js';
 
 const data = [
   {
